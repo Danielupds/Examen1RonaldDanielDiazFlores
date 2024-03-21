@@ -1,4 +1,5 @@
 ﻿using EmpleadoDal;
+using EmpleadoModelos;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace EmpleadoBss
 {
-    public class PersonasBss
+    public class EmpleadosBss
     {
-        PersonasDal dal = new PersonasDal();
-        public DataTable ListarPersonasBss()
+        EmpleadosDal dal = new EmpleadosDal();
+        public DataTable ListarEmpleadosBss()
         {
-            return dal.ListarPersonasDal();
+            return dal.ListarEmpleadosDal();
         }
     }
 }
