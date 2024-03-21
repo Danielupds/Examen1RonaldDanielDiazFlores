@@ -22,8 +22,7 @@ namespace EmpleadoDal
         {
             string consulta = "insert into persona values('" + empleado.Puesto + "'," +
                                                          "'" + empleado.Salario + "'," +
-                                                         "'" + empleado.FechaContratacion + "'," +
-                                                         "'Activo')";
+                                                         "'" + empleado.FechaContratacion + "',";
             conexion.Ejecutar(consulta);
         }
     }
